@@ -8,7 +8,7 @@ body {
     letter-spacing: 0.02em;
     line-height: 120%;
 	padding: 0;
-    margin: 0;
+    margin: 0 auto;
     background-color: #F9FFFF;
 	color: #2A2A3C;
 }
@@ -19,19 +19,17 @@ h1 {
     font-size: 204.3px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    line-height: 77%;
+    line-height: 125%;
     margin: 0;
-    /* margin-block-start: 0;
-    margin-block-end: 0; */
-    /* margin-top: 100px; Костыль, иначе заголовок сдвигается не туда */
-    margin-left: -14px; /* Т. к. границы текста больше, чем сам текст */
+    margin-left: -14px;
+    margin-top: -49px;
 }
 
 h2 {
     margin: 0;
     margin-bottom: 26px;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 26px;
     letter-spacing: 0.02em;
     line-height: 100%;
 }
@@ -41,7 +39,7 @@ h3 {
     font-size: 14px;
     margin: 0;
     padding: 0;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 p {
@@ -53,8 +51,8 @@ p {
     max-width: 274px;
 }
 
-.product_link_long {
-    max-width: 372px;
+.img_fit {
+    width: 100%;
 }
 
 
@@ -63,7 +61,7 @@ p {
 .main_section {
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 67px;
+    margin-bottom: 66px;
     margin-top: 20px;
 }
 
@@ -83,14 +81,13 @@ p {
 .menu {
     font-size: 12px;
     width: 100%;
-	/* background: none; */
 	padding: 0;
     margin-bottom: 30px;
-	/* z-index: 100; */
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	/* gap: 0.5rem; */
+    position: relative;
+    z-index: 2;
 }
 
 .logo {
@@ -103,23 +100,29 @@ p {
 
 .menu_group {
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 20px;
     margin: 0;
     padding: 0;
     list-style: none;
-    /* margin-left: auto; */
     margin-right: auto;
 }
 
 
 
 /* FIRST SCREEN */
+.first_screen {
+    position: relative;
+}
+
 .picture_and_description {
-    margin-top: -85px;
+    margin-top: -134px;
     position: relative;
     display: flex;
     align-items: flex-end;
+}
+
+.first_screen_image {
+    max-width: 412px;
 }
 
 .description {
@@ -128,24 +131,24 @@ p {
 
 .product_link_upper_left {
     position: absolute;
-    top: 290px; /* Костыль, но иначе пока не получается */
+    top: 148px;
 }
 
 .product_link_lower_left {
     position: absolute;
-    top: 420px;
+    top: 278px;
 }
 
 .product_link_upper_right {
     position: absolute;
-    top: 320px;
-    left: 706px;
+    top: 178px;
+    left: 686px;
 }
 
 .product_link_lower_right {
     position: absolute;
-    top: 460px;
-    left: 706px;
+    top: 318px;
+    left: 686px;
 }
 
 
@@ -160,18 +163,6 @@ p {
     margin-bottom: 12px;
 }
 
-.small_card {
-    display: inline;
-    width: 274px;
-    margin-right: 20px;
-}
-
-.big_card {
-    display: inline;
-    width: 372px;
-    margin-right: 20px;
-}
-
 
 
 /* FOOTER NAVIGATION */
@@ -180,8 +171,6 @@ p {
     color: #F9FFFF;
     width: 100%;
 	display: flex;
-	/* flex-direction: row; */
-	/* align-items: flex-start; */
     align-items: center;
     margin-right: auto;
     gap: auto;
@@ -216,24 +205,32 @@ p {
 
 
 /* IMAGE LINKS */
-a.img_link:link {
+a.img_link:link, a.img_link:visited, a.img_link:hover, a.img_link:active {
     color: #2A2A3C;
     text-decoration: none;
 }
-  
-a.img_link:visited {
-    color: #2A2A3C;
+
+
+
+/* CARD LINKS */
+a.small_card_link:link, a.small_card_link:visited, a.small_card_link:hover, a.small_card_link:active {
+    color: #F9FFFF;
     text-decoration: none;
+    margin-right: 20px;
+    max-width: 274px;
 }
-  
-a.img_link:hover {
-    color: #2A2A3C;
+
+a.big_card_link:link, a.big_card_link:visited, a.big_card_link:hover, a.big_card_link:active {
+    color: #F9FFFF;
     text-decoration: none;
+    margin-right: 20px;
+    max-width: 372px;
 }
-  
-a.img_link:active {
-    color: #2A2A3C;
+
+a.small_right_card_link:link, a.small_right_card_link:visited, a.small_right_card_link:hover, a.small_right_card_link:active {
+    color: #F9FFFF;
     text-decoration: none;
+    max-width: 274px;
 }
 
 
