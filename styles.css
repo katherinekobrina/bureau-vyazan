@@ -1,4 +1,10 @@
 /* MAIN STYLES */
+:root {
+    --light-blue: #F9FFFF;
+    --hardly-black: #2A2A3C;
+    --bright-blue: #0066FF;
+}
+
 body {
     width: 100%;
     max-width: 1000px;
@@ -9,8 +15,8 @@ body {
     line-height: 120%;
 	padding: 0;
     margin: 0 auto;
-    background-color: #F9FFFF;
-	color: #2A2A3C;
+    background-color: var(--light-blue);
+	color: var(--hardly-black);
 }
 
 h1 {
@@ -64,12 +70,12 @@ p {
 
 
 .footer {
-    background-color: #2A2A3C;
+    background-color: var(--hardly-black);
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 30px;
     padding-top: 40px;
-    color: #F9FFFF;
+    color: var(--light-blue);
 }
 
 
@@ -164,7 +170,7 @@ p {
 /* FOOTER NAVIGATION */
 .footer_nav {
     font-size: 12px;
-    color: #F9FFFF;
+    color: var(--light-blue);
     width: 100%;
 	display: flex;
     align-items: flex-start;
@@ -197,7 +203,7 @@ p {
 
 /* IMAGE LINKS */
 a.img_link:link, a.img_link:visited, a.img_link:hover, a.img_link:active {
-    color: #2A2A3C;
+    color: var(--hardly-black);
     text-decoration: none;
 }
 
@@ -205,7 +211,7 @@ a.img_link:link, a.img_link:visited, a.img_link:hover, a.img_link:active {
 
 /* CARD LINKS */
 .card {
-    color: #F9FFFF;
+    color: var(--light-blue);
     text-decoration: none;
     margin-bottom: auto;
     max-width: 274px;
@@ -219,12 +225,12 @@ a.img_link:link, a.img_link:visited, a.img_link:hover, a.img_link:active {
 
 /* MENU LINKS */
 a.menu_link:link, a.menu_link:visited {
-    color: #2A2A3C;
+    color: var(--hardly-black);
     text-decoration: none;
 }
   
 a.menu_link:hover, a.menu_link:active {
-    color: #0066FF;
+    color: var(--bright-blue);
     text-decoration: underline;
     text-underline-offset: 5px;
     text-decoration-thickness: .25px;
@@ -234,7 +240,7 @@ a.menu_link:hover, a.menu_link:active {
 
 /* PRODUCT LINKS */
 a.product_link:link, a.product_link:visited, a.product_link:hover, a.product_link:active {
-    color: #2A2A3C;
+    color: var(--hardly-black);
     text-decoration: underline;
     text-underline-offset: 5px;
     text-decoration-thickness: .25px;
@@ -242,19 +248,19 @@ a.product_link:link, a.product_link:visited, a.product_link:hover, a.product_lin
 }
 
 a.product_link:hover, a.product_link:active {
-    color: #0066FF;
+    color: var(--bright-blue);
 }
 
 
 
 /* FOOTER LINKS */
 a.footer_link:link, a.footer_link:visited {
-    color: #F9FFFF;
+    color: var(--light-blue);
     text-decoration: none;
 }
   
 a.footer_link:hover, a.footer_link:active {
-    color: #0066FF;
+    color: var(--bright-blue);
     text-decoration: underline;
     text-underline-offset: 5px;
     text-decoration-thickness: .25px;
